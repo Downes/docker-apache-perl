@@ -2,5 +2,5 @@ version: '3'
 services:
   perl-apache:
     build:
-      context: ./perl
+      context: ./perl-apache
       dockerfile: Dockerfile
