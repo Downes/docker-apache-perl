@@ -31,6 +31,6 @@ RUN \
 
 COPY localhost.conf /etc/apache2/sites-enabled/localhost.conf
 
-VOLUME ["/var/www/html/test"]
+VOLUME ["/var/www/html"]
 
 EXPOSE 80
