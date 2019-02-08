@@ -1,11 +1,13 @@
 version: '3'
 services:
-  php-apache:
-      image: php:7.2.1-apache
+  perl-apache:
+    build:
+      context: ./perl
+      dockerfile: Dockerfile
       ports:
           - 80:80
       volumes:
-          - ./DocumentRoot:/var/www/html:z
+          - ./DocumentRoot:/var/www/html
       links:
           - 'mariadb'
 
