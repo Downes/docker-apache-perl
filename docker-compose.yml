@@ -4,5 +4,3 @@ services:
     build:
       context: ./perl
       dockerfile: Dockerfile
-      ports:
-          - 80:80
