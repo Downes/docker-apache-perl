@@ -51,7 +51,7 @@ cd perl-apache
 
 docker build --tag perl-apache .
 
-docker run -p 443:443 --detach --name app downes/perl_apache
+docker run -p 443:443 --detach -v ${PWD}/www:/var/www/html --name app downes/perl_apache
 ```
 
 
