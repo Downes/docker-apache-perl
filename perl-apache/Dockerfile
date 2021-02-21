@@ -76,7 +76,7 @@ RUN a2enconf cgi-enabled
 # Set up server test
 RUN mkdir /var/www/html/cgi-bin
 COPY apache_test.cgi /var/www/html/cgi-bin
-RUN chmod 705 /var/www/html/cgi-bin/apache_test.cgi
+RUN chmod 775 /var/www/html/cgi-bin/apache_test.cgi
 
 # Run startup script
 COPY run-lamp.sh /usr/sbin/
