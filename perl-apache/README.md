@@ -17,7 +17,7 @@ To run from Docker Image:
 ```
 docker pull downes/apache-perl
 
-docker run -p 80:80 -p 443:443 --detach --name app downes/apache-perl
+docker run -p 443:443 -v ${PWD}/www:/var/www/html --detach --name app downes/apache-perl
 ```
 
 
